@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>收取定金诚意金</title>
+
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="../css/css.css" type="text/css">
+
+    <script src="../js/zepto.min.js"></script>
+
+</head>
+
+<body class="bPER">
+
+<div class="centerSection bPER">
+    <section class="mgb10 bBS">
+        <ul class="pdX10 getKeyInput">
+            <li class="pdY10"><input type="text" placeholder="输入购房者/租房者微信名称"></li>
+            <li class="pdY10"><input type="text" placeholder="输入金额"></li>
+            <li class="pdY10"><input type="text" placeholder="输入钥匙ID"></li>
+        </ul>
+        <div class="ListKeyBtn b-bs pd10"><a class="b00BB9B fFFF rentClic">确认收取</a><a class="bE6E6E6 mgl10">取&nbsp;&nbsp;&nbsp;&nbsp;消</a></div>
+    </section>
+    <section class="csMyfavorite mgb10 bBS">
+        <div class="csMf-title">
+            <span class="f00BB9B mgl3">近期收取</span>
+        </div>
+        <ul class="getKeyUL usualGK b-bs pdX10">
+            <li class="pdY10"><span class="getKeyID">500元</span><span class="getKeyName">张先生的诚意金</span><a class="rentClic b00BB9B fFFF">退&nbsp;&nbsp;回</a></li>
+            <li class="pdY10"><span class="getKeyID">900元</span><span class="getKeyName">李先生的诚意金</span><a class="rentClic b00BB9B fFFF">退&nbsp;&nbsp;回</a></li>
+            <li class="pdY10"><span class="getKeyID">800元</span><span class="getKeyName">王先生的诚意金</span><a class="rentClic b00BB9B fFFF">退&nbsp;&nbsp;回</a></li>
+            <li class="pdY10"><span class="getKeyID">900元</span><span class="getKeyName">陈先生的诚意金</span><a class="rentClic b00BB9B fFFF">退&nbsp;&nbsp;回</a></li>
+            <li class="pdY10"><span class="getKeyID">800元</span><span class="getKeyName">黎先生的诚意金</span><a class="rentClic b00BB9B fFFF">退&nbsp;&nbsp;回</a></li>
+        </ul>
+    </section>
+</div>
+<div class="maskLayer none"></div>
+<div class="promptBox none">
+    <div class="promptBoxTT center">提示</div>
+    <div class="pd10">
+        <div class="promptInput fB1B1B1 mgb10">
+            成功领取诚意金！
+        </div>
+        <div class="ListKeyBtn">
+            <a class="bg2E8CEC fFFF bd-227DDA cancel">确&nbsp;&nbsp;&nbsp;&nbsp;认</a>
+            <a class="bgF1F1F1 mgl10 bd-DEDEDE cancel">取&nbsp;&nbsp;&nbsp;&nbsp;消</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(".rentClic").click(function(){
+        $(".maskLayer,.promptBox").css("display","block");
+    });
+    $(".maskLayer,.cancel").click(function(){
+        $(".maskLayer,.promptBox").css("display","none");
+    });
+</script>
+</body>
+</html>

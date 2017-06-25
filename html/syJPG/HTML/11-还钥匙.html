@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>还钥匙</title>
+
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="../css/css.css" type="text/css">
+
+    <script src="../js/zepto.min.js"></script>
+
+</head>
+
+<body class="bPER">
+
+<div class="centerSection bPER">
+    <section class="mgb10 bBS">
+        <ul class="ListKey">
+            <li><span class="ListKeyIcon selectIcon"><input class="none" type="checkbox" id="lkIcon0"><label for="lkIcon0" class="seleiconf icon-xuanze">00001,蜀都花园1栋22楼22号</label></span></li>
+            <li><span class="ListKeyIcon selectIcon"><input class="none" type="checkbox" id="lkIcon1"><label for="lkIcon1" class="seleiconf icon-xuanze">00002,蜀都花园2栋20楼20号</label></span></li>
+            <li><span class="ListKeyIcon selectIcon"><input class="none" type="checkbox" id="lkIcon2"><label for="lkIcon2" class="seleiconf icon-xuanze">00003,蜀都花园4栋10楼22号</label></span></li>
+            <li><span class="ListKeyIcon selectIcon"><input class="none" type="checkbox" id="lkIcon3"><label for="lkIcon3" class="seleiconf icon-xuanze">00004,蜀都花园2栋6楼10号</label></span></li>
+        </ul>
+        <div class="ListKeyBtn b-bs pd10"><a class="bFE7701 fFFF rentClic">归还全部</a><a class="bE6E6E6 mgl10">取&nbsp;&nbsp;&nbsp;&nbsp;消</a></div>
+    </section>
+    <section class="csMyfavorite mgb10 bBS">
+        <div class="csMf-title">
+            <span class="f00BB9B mgl3">常领钥匙</span>
+        </div>
+        <ul class="getKeyUL b-bs pdX10 usualGK">
+            <li class="pdY10"><span class="getKeyID">000001</span><span class="getKeyName">蜀都花园11-13-16</span><a class="lyclick b00BB9B fFFF">领&nbsp;&nbsp;用</a></li>
+            <li class="pdY10"><span class="getKeyID">000002</span><span class="getKeyName">翡翠园11-14-15</span><a class="lyclick b00BB9B fFFF">领&nbsp;&nbsp;用</a></li>
+            <li class="pdY10"><span class="getKeyID">000003</span><span class="getKeyName">蜀都花园11-16-18</span><a class="lyclick b00BB9B fFFF">领&nbsp;&nbsp;用</a></li>
+            <li class="pdY10"><span class="getKeyID">000004</span><span class="getKeyName">蜀都花园11-17-19</span><a class="lyclick b00BB9B fFFF">领&nbsp;&nbsp;用</a></li>
+            <li class="pdY10"><span class="getKeyID">000005</span><span class="getKeyName">麓山国际社区11-18-13</span><a class="lyclick b00BB9B fFFF">领&nbsp;&nbsp;用</a></li>
+        </ul>
+    </section>
+</div>
+<div class="maskLayer none"></div>
+<div class="promptBox none ghed">
+    <div class="promptBoxTT center">提示</div>
+    <div class="pd10">
+        <div class="promptInput fB1B1B1 mgb10">
+            已经归还！
+        </div>
+        <div class="ListKeyBtn">
+            <a class="bg2E8CEC fFFF bd-227DDA cancel">确&nbsp;&nbsp;&nbsp;&nbsp;定</a>
+            <a class="bgF1F1F1 mgl10 bd-DEDEDE cancel">取&nbsp;&nbsp;&nbsp;&nbsp;消</a>
+        </div>
+    </div>
+</div>
+<div class="promptBox none lyed">
+    <div class="promptBoxTT center">提示</div>
+    <div class="pd10">
+        <div class="promptInput fB1B1B1 mgb10">
+            0002号钥匙已被张三领用
+        </div>
+        <div class="ListKeyBtn">
+            <a href="tel:13000000000" class="bg2E8CEC fFFF bd-227DDA">联系TA</a>
+            <a class="bgF1F1F1 mgl10 bd-DEDEDE cancel">取&nbsp;&nbsp;&nbsp;&nbsp;消</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var lkLength = $(".ListKey li").length;
+    for(var i=0;i<lkLength;i++){
+        $(".ListKey li").eq(i)[0].children[0].children[0].id = "lkIcon" + i;
+        $(".ListKey li").eq(i)[0].children[0].children[1].htmlFor = "lkIcon" + i
+    }
+    $("label.seleiconf").click(function(){
+        if(!$(this)[0].control.checked){
+            $(this).attr("class","seleiconf icon-xuanze1");
+         }else{
+            $(this).attr("class","seleiconf icon-xuanze");
+         }
+    })
+
+    $(".rentClic").click(function(){
+        $(".maskLayer,.ghed").css("display","block");
+    });
+    $(".lyclick").click(function(){
+        $(".maskLayer,.lyed").css("display","block");
+    });
+    $(".maskLayer,.cancel").click(function(){
+        $(".maskLayer,.promptBox").css("display","none");
+    });
+</script>
+</body>
+</html>

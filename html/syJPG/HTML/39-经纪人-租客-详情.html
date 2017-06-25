@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>蜀都花园买主</title>
+
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="../css/css.css" type="text/css">
+
+    <script src="../js/zepto.min.js"></script>
+
+</head>
+
+<body class="bPER">
+<div class="centerSection bPER">
+    <section class="mgb10 bBS">
+        <ul class="averageUl">
+            <li class="cr-selected"><p>990</p><p>对话</p></li>
+            <li><a><p><i class="iconfont">&#xe623;</i></p><p>张三</p></a></li>
+            <li><a href="tel:13000000000"><p><i class="iconfont">&#xe636;</i></p><p>电话联系</p></a></li>
+        </ul>
+    </section>
+    <section class="MsgSend mgb10 bBS tb-bs">
+        <div>
+            <textarea class="MsgTextA" placeholder="请输入您的信息" ></textarea>
+        </div>
+        <div class="MsgBt">
+            <span><i class="iconfont">&#xe604;</i>与经纪人对话</span>
+            <span class="MsgLabel MsYy"><i class="iconfont">&#xe605;</i>图片</span>
+            <span class="MsgLabel MsTp"><i class="iconfont">&#xe616;</i>语音</span>
+            <a class="MsgSendBt b00BB9B">发&nbsp;&nbsp;送</a>
+        </div>
+    </section>
+    <section class="Msgex mgb10 pdX10">
+        <div class="Msgex-vertical"></div>
+        <ul class="MsgexUl">
+            <li class="HMsg">
+                <div class="Msgex-label"></div>
+                <p>房东：房屋已经成交。</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="HMsg">
+                <div class="Msgex-label"></div>
+                <p>房东：修改价格为990万</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：物业费2元/月*㎡</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="HMsg">
+                <div class="Msgex-label"></div>
+                <p>张三：物业费多少？</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：带看1组客户 （附图，缩略图）</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="HMsg">
+                <div class="Msgex-label"></div>
+                <p>张三：（语音）</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：上传了12张照片</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：<a>点此查看房源</a></p>
+                <p>2015-12-13  22:05</p>
+            </li>
+        </ul>
+    </section>
+    <div class="topRefresh mgb10"><i class="iconfont">&#xe60c;</i>上拉刷新</div>
+</div>
+<script type="text/javascript">
+    var msUll = $(".MsgexUl li").length;
+    var mslast = $(".MsgexUl li:nth-child(" + msUll + ")").height();
+    var msV = $(".Msgex-vertical").height();
+    $(".Msgex-vertical").height(msV - mslast + "px");
+</script>
+</body>
+</html>

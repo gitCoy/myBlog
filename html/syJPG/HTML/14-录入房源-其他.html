@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>录入房源</title>
+
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="../css/css.css" type="text/css">
+
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/touch.js" defer></script>
+
+</head>
+
+<body class="bPER">
+<div class="centerSection bPER">
+    <!--<section class="mgb10 bBS">-->
+        <!--<ul class="averageUl titClick">-->
+            <!--<li><p><i class="iconfont">&#xe602;</i></p><p>基本资料</p></li>-->
+            <!--<li><p><i class="iconfont">&#xe600;</i></p><p>家具家电</p></li>-->
+            <!--<li class="cr-selected"><p><i class="iconfont">&#xe601;</i></p><p>其他</p></li>-->
+        <!--</ul>-->
+    <!--</section>-->
+    <section class="mgb10 bBS tb-bs">
+        <ul class="pdX10 getKeyInput">
+            <li class="pdY10"><input type="text" placeholder="选择或输入房东名称"></li>
+            <li class="pdY10"><input type="text" placeholder="输入联系方式"></li>
+            <li class="pdY10">
+                <span class="haveKey">
+                    <input class="none" name="haveKey" type="radio" id="lkIcon0">
+                    <label for="lkIcon0" class="seleiconf icon-xuanze">有钥匙</label>
+                </span>
+                <span class="haveKey">
+                    <input class="none" type="radio" name="haveKey" id="lkIcon1">
+                    <label for="lkIcon1" class="seleiconf icon-xuanze">无钥匙</label>
+                </span>
+                <div class="clear"></div>
+            </li>
+            <li class="lr-bs">
+                <select class="getKeySelect">
+                    <option>外借</option>
+                    <option>正在使用</option>
+                    <option>掉了</option>
+                </select>
+            </li>
+            <li class="pdY10"><input type="text" placeholder="输入配套"></li>
+            <li class="pdY10"><input type="text" placeholder="输入交通"></li>
+        </ul>
+        <div class="ListKeyBtn pd10"><a href="geopoint:108.954823,34.275891" class="b00BB9B fFFF">确认录入</a></div>
+    </section>
+</div>
+<script type="text/javascript">
+    $(".haveKey").click(function(){
+        if($(this).find("label").attr("class") != "seleiconf icon-xuanze1"){
+            $(this).find("label").attr("class","seleiconf icon-xuanze1");
+        }else{
+            $(".haveKey label").not($(this).find("label")).attr("class","seleiconf icon-xuanze");
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>蜀都花园看房本</title>
+
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="../css/css.css" type="text/css">
+
+    <script src="../js/zepto.min.js"></script>
+
+</head>
+
+<body class="bPER">
+<div class="centerSection bPER">
+    <section class="mgb10 bBS">
+        <ul class="averageUl">
+            <li><a><p>990</p><p>元/月</p></a></li>
+            <li><a><p>15</p><p>看过</p></a></li>
+            <li><a href="10-物品清单-基本资料-物品清单.html" class="f00BB9B"><p><i class="iconfont">&#xe609;</i></p><p>物品清单</p></a></li>
+        </ul>
+    </section>
+    <section class="imgTMove mgb10 bBS pic1">
+        <ul class="imgTMUl">
+            <li><img src="../images/kf01.jpg"></li>
+            <li><img src="../images/kf02.jpg"></li>
+            <li><img src="../images/kf03.jpg"></li>
+            <div class="clear"></div>
+        </ul>
+    </section>
+    <section class="MsgSend mgb10 bBS tb-bs">
+        <div>
+            <textarea class="MsgTextA" placeholder="请输入您的信息" ></textarea>
+        </div>
+        <div class="MsgBt">
+            <span><i class="iconfont">&#xe604;</i>与经纪人对话</span>
+            <a class="MsgSendBt b00BB9B">发&nbsp;&nbsp;送</a>
+        </div>
+    </section>
+    <section class="Msgex mgb10 pdX10">
+        <div class="Msgex-vertical"></div>
+        <ul class="MsgexUl">
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：收到已退回诚意金500</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="HMsg">
+                <div class="Msgex-label"></div>
+                <p>房东：停售退回</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：已付诚意金500</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：定了，就这间房</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="HMsg">
+                <div class="Msgex-label"></div>
+                <p>张三：带看客户王女士反馈：好喜欢</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：收到</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="HMsg">
+                <div class="Msgex-label"></div>
+                <p>张三：上传了12张照片</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="HMsg">
+                <div class="Msgex-label"></div>
+                <p>张三：<a>点此查看房源</a></p>
+                <p>2015-12-13  22:05</p>
+            </li>
+        </ul>
+    </section>
+    <div class="topRefresh mgb70"><i class="iconfont">&#xe60c;</i>上拉刷新</div>
+</div>
+<footer class="footer">
+    <ul class="averageUl fti-ul">
+        <li>
+            <a class="fFF3333" href="tel:13000000000"><p><i class="iconfont">&#xe636;</i></p><p>电话联系</p></a>
+        </li>
+        <li>
+            <a class="f00BB9B"><p><i class="iconfont">&#xe60b;</i></p><p>催一下</p></a>
+        </li>
+        <li>
+            <a>
+                <div class="fti-ul-img"><img src="../images/picImg.png"></div>
+                <dl>
+                    <dt>张三</dt>
+                    <dd>130000000000</dd>
+                </dl>
+            </a>
+        </li>
+    </ul>
+</footer>
+<script type="text/javascript" src="../js/dtyl.js"></script>
+<script type="text/javascript">
+    var msUll = $(".MsgexUl li").length;
+    var mslast = $(".MsgexUl li:nth-child(" + msUll + ")").height();
+    var msV = $(".Msgex-vertical").height();
+    $(".Msgex-vertical").height(msV - mslast + "px");
+</script>
+</body>
+</html>

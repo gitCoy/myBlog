@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <Meta http-equiv=Page-Enter Content=blendTrans(Duration=0.5)>
+    <Meta http-equiv=Page-Exit Content=blendTrans(Duration=0.5)>
+    <Meta name=Keywords Content=媒婆帮，媒婆，媒人，结婚，说媒>
+    <meta name="description" content="媒婆帮">
+    <link rel="stylesheet" type="text/css" href="style/common.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<header class="index_header">
+    <div class="header_cont">
+        <div class="header_cont_left fl">
+            <div class="logo fl">
+                <img src="images/logo.jpg">
+            </div>
+            <nav class="menu fl">
+                <a class="" href="01-员工管理.html">员工管理</a>
+                <a class="menuSelected" href="02-财务管理.html"> 财务管理</a>
+            </nav>
+            <div class="clear"></div>
+        </div>
+        <div class="header_cont_right fr">
+            <div class="curPointer">
+                <span>对应登录的商户名称</span><span class="headerSJ"></span>
+            </div>
+            <ul class="loginName">
+                <li><a href="13-商家中心.html">商家中心</a></li>
+                <li><a>退出登录</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</header>
+<div class="index_main">
+    <div class="header_cont mainCont">
+        <div class="cw_hang bold_font bBS"><span>账户总金额</span><span class="cw_je mgl20">168888</span><label>元</label> <div class="fr"><span class="myList b3785FC">提现</span></div></div>
+        <div class="bBS txCont">
+            <div class="txContInput">
+                <form action="">
+                    <div class="incomeTT bold_font">提现金额</div>
+                    <div class="inputH"><input type="text" value="asdkjsd@163.com" /></div>
+                    <div class="inputH"><input type="text" placeholder="提现金额" /></div>
+                    <p class="dzTime">3个工作日内到账</p>
+                    <div class="inputSub"><input type="submit" value="确定" onclick="showTx();"/></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mask" id="mask"></div>
+<div class="tcBox bBS pd10" id="tcBox">
+    <div class="gouImg fFFF center"><img src="images/gou.png"></div>
+    <p class="center pdY10">转出申请已提交，等待银行处理</p>
+    <div class="mgY10 center"><a class="b3785FC fFFF confirm" onclick="hideTx();">确定</a></div>
+</div>
+<script type="text/javascript">
+    function hideTx(){
+        document.getElementById("mask").style.display = "none";
+        document.getElementById("tcBox").style.display = "none";
+    }
+    function showTx(){
+        document.getElementsByClassName("mask").style.display = "block";
+        document.getElementsByClassName("tcBox").style.display = "block";
+    }
+</script>
+</body>
+</html>

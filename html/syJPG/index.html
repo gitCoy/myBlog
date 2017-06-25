@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>个人中心</title>
+
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="css/css.css" type="text/css">
+
+    <script src="js/zepto.min.js"></script>
+</head>
+<body class="bPER">
+<div class="maskLayer"></div>
+<div class="promptBox">
+    <div class="promptBoxTT center">选择进入</div>
+    <div class="pd10">
+        <div class="ListKeyBtn xqcl">
+            <a href="HTML/01-用户个人中心.html" class="bg2E8CEC fFFF bd-227DDA">用户个人中心</a>
+            <a href="HTML/02-经纪人个人中心.html" class="b00BB9B mgl10 fFFF bd-01A58A">经纪人中心</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var msUll = $(".MsgexUl li").length;
+    var mslast = $(".MsgexUl li:nth-child(" + msUll + ")").height();
+    var msV = $(".Msgex-vertical").height();
+    $(".Msgex-vertical").height(msV - mslast + "px");
+</script>
+</body>
+</html>

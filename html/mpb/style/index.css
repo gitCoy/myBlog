@@ -1,0 +1,572 @@
+
+/**************注册账户   start *************/
+
+.reg_main{
+	background-image: url(../images/bg.png);
+	background-size: 100% 100%;
+}
+
+.reg_main .reg_bg{
+    padding: 14% 0;
+	background-color: rgba(0,0,0,0.6);
+} 
+
+.reg_main .reg_message{
+   width: 550px;
+   height: 480px;
+   background-color: #fff;
+   margin: auto auto;
+  /* padding:6% 0 10% 0;*/
+}
+
+.reg_main .reg_message div{
+  padding: 0 100px;
+  position: relative;
+}
+
+
+
+
+.reg_main .reg_message div img{
+	display: inline-block;
+	width: 27%;
+	margin:50px 0 30px 100px;
+}
+
+.reg_main .reg_message div span{
+	display: inline-block;
+/*	margin-top:5%;*/
+	font-size: 26px;
+	position: absolute;
+	top: 80px;
+}
+
+.reg_main .reg_message  form input{
+   display: block;
+   width: 350px;
+   height: 50px;
+   margin:  0 auto;
+   padding-left: 15px;
+}
+
+
+.reg_main .reg_message  form input:nth-child(2){
+	display: inline-block;
+	width: 230px;
+	margin: 20px 0px 20px 100px;
+}
+
+
+.reg_main .reg_message  form span{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: #3785fc;
+	margin: 20px 100px 20px 0;
+	float: right;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+
+}
+
+.reg_main .reg_message  form span input{
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	padding-left: 0;
+	border: none;
+	background-color: #3785fc;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.reg_main .reg_message  form input[type=submit]{
+    width: 350px;
+    margin-top: 30px;
+
+}
+
+
+/**************注册成功   start *************/
+
+
+.reg_suc{
+	background-image: url(../images/bg.png);
+	background-size: 100% 100%;
+}
+
+.reg_suc .reg_suc_bg{
+	padding: 21.5% 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.reg_suc .reg_suc_bg .reg_suc_message{
+	width: 550px;
+   background-color: #fff;
+   margin: auto auto;
+   text-align: center;
+   padding-top:1%;
+}
+
+.reg_suc span{
+	display: block;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+.reg_suc img{
+	width: 10%;
+	padding-bottom: 30px;
+}
+
+
+/**************完善商户信息   start *************/
+
+
+.con_shanghu{
+	background-image: url(../images/bg.png);
+	background-size: 100% 100%;
+}
+
+.con_shanghu .con_shanghu_bg{
+    padding: 5% 0;
+	background-color: rgba(0,0,0,0.6);
+} 
+
+
+.con_shanghu .con_shanghu_message{
+   width: 550px;
+   background-color: #fff;
+   margin: auto auto;
+   text-align: center;
+   padding-top:1%;
+}
+
+
+.con_shanghu .con_shanghu_message .con_add{
+	position: relative;
+}
+
+.con_shanghu .con_shanghu_message .con_add img{
+	width: 20px;
+	height: 30px;
+	margin-top: 20%;
+}
+
+.con_shanghu .con_shanghu_message  span.address{
+  display: inline-block;
+  width: 50px;
+  height:50px;
+  position: absolute;
+  right: 110px;
+  top: 0;
+}
+
+.con_shanghu .con_shanghu_message span.name{
+	font-size: 26px;
+}
+
+.con_shanghu .con_shanghu_message form{
+	padding-bottom: 40px;
+}
+
+.con_shanghu .con_shanghu_message form div.main{
+	width: 350px;
+	margin: 0 auto;
+}
+
+
+.con_shanghu .con_shanghu_message form div.main div{
+	width: 100%;
+	min-height: 100px;
+}
+
+.con_shanghu .con_shanghu_message form div.main div:nth-child(2){
+	float: left;
+}
+
+.con_shanghu .con_shanghu_message form div.main span{
+	text-align: left;
+	display: block;
+	padding:4% 0 2% 0;
+}
+
+.con_shanghu .con_shanghu_message form input{
+	display: block;
+	width: 330px;
+	min-height: 50px;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+
+.con_shanghu .con_shanghu_message form textarea{
+	display: block;
+	width: 330px;
+	min-height:90px;
+	margin-top: 20px;
+	padding: 20px 0 0 20px;
+}
+
+.con_shanghu .con_shanghu_message form input[type=button]{
+	display: block;
+	width: 350px;
+	height: 50px;
+	margin-top: 20px;
+}
+
+
+.addImglabel {
+	display: inline-block;
+	width: 100%;
+	height: 80px;
+	line-height: 100px;
+	color: #e1e1e1;
+	background-color: #eee;
+	text-align: center;
+	position: relative;
+}
+.formAddImg li {
+	width: 30%;
+	height: 80px;
+	float: left;
+	margin-right: 3%;
+	margin-bottom: 10px;
+}
+.formAddImg li img {
+	width: 100%;
+	height: 100%;
+}
+.formAddImg:after {
+	content: "";
+	clear: both;
+}
+.addImgJ {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 30px;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.formAddImg li span.addImgJ img{
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	top: 20%;
+	left: 22%;
+}
+
+#filePre{
+	display: none;
+}
+
+
+#fileHj{
+	display: none;
+}
+
+
+/**************完善成功提示   start *************/
+
+
+.con_success{
+	background-image: url(../images/bg.png);
+	background-size: 100% 100%;
+}
+
+.con_success .con_success_bg{
+    padding: 22% 0;
+	background-color: rgba(0,0,0,0.6);
+} 
+
+
+.con_success .con_success_message{
+   width: 550px;
+   height:150px;
+   background-color: #fff;
+   margin: auto auto;
+   text-align: center;
+   padding-top:1.5%;
+}
+
+.con_success .con_success_message span{
+	display: block;
+	margin-top: 3%;
+}
+
+.con_success .con_success_message span img{
+	width:10%;
+}
+
+
+/*.con_success{
+	position: absolute;
+	width: 550px;
+	background-color: #fff;
+	text-align: center;
+	top: 34%;
+	left:35%;
+	padding:2% 0 0 0;
+}
+
+.con_success span{
+	display: block;
+	font-size: 16px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+.con_success img{
+	width: 10%;
+}*/
+
+/**************登录   start *************/
+
+/*.login{
+	position: absolute;
+	width: 550px;
+	height: 400px;
+	background-color: #fff;
+	text-align: center;
+	top: 32%;
+	left:35%;
+}*/
+
+.login{
+	background-image: url(../images/bg.png);
+	background-size: 100% 100%;
+}
+
+.login .login_bg{
+    padding: 18% 0;
+	background-color: rgba(0,0,0,0.6);
+} 
+
+
+/*.reg_main{
+	position: absolute;
+	width: 550px;
+	background-color: #fff;
+	text-align: center;
+	top: 30%;
+	left:35%;
+}*/
+
+
+.login .login_bg .login_main{
+   width: 550px;
+   background-color: #fff;
+   margin: auto auto;
+   padding:2% 0;
+}
+
+.login .login_main span.name{
+	display: block;
+   font-size: 26px;
+   text-align: center;
+}
+
+.login .login_main form input{
+	display: block;
+	width: 350px;
+	height: 50px;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+.login .login_main form p.select{
+	display: block;
+	width: 350px;
+    margin: 0 auto;
+    padding: 10px 0 20px 0;
+}
+
+.login .login_main form input[type=checkbox]{
+	display: inline-block;
+	width:15px;
+	height: 15px;
+	float: left;
+	margin: 3px 5px 0 0;
+}
+
+.login .login_main form span.passa{
+	float: left;
+}
+
+
+.login .login_main form span.passb{
+	float: right;
+}
+
+
+.login .login_main form input[type=button]{
+	padding-left: 0;
+}
+
+.login .login_main form p.zhuce{
+	margin-top: 20px;
+	font-size:18px;
+	text-align: center;
+}
+
+.login .login_main form p.zhuce a{
+   color: #3785fc;
+
+}
+
+
+/**************找回密码   start *************/
+
+.return{
+	background-image: url(../images/bg.png);
+	background-size: 100% 100%;
+}
+
+.return .return_main_bg{
+    padding: 22% 0;
+	background-color: rgba(0,0,0,0.6);
+} 
+
+
+.return .return_main_message{
+   width: 550px;
+   background-color: #fff;
+   margin: auto auto;
+   text-align: center;
+   padding:1.5% 0;
+}
+.return .return_main_message span.name{
+	display: block;
+	margin-bottom: 5%;
+	font-size: 26px;
+}
+
+.return .return_main_message  form input{
+   display: block;
+   width: 350px;
+   height: 50px;
+   margin:  0 auto;
+   padding-left: 20px;
+}
+
+
+.return .return_main_message form input:nth-child(2){
+	display: inline-block;
+	width: 230px;
+	margin: 20px 0px 20px 80px;
+}
+
+
+.return .return_main_message  form span{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: #3785fc;
+	margin: 20px 100px 20px 0;
+	float: right;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+
+}
+
+.return .return_main_message  form span input{
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	padding-left: 0;
+	border: none;
+	background-color: #3785fc;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.return .return_main_message  form input[type=button]{
+    width: 350px;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+
+/**************修改密码   start *************/
+
+.modify{
+	background-image: url(../images/bg.png);
+	background-size: 100% 100%;
+}
+
+.modify .modify_main_bg{
+    padding: 20% 0;
+	background-color: rgba(0,0,0,0.6);
+} 
+
+
+.modify .modify_main_message{
+   width: 550px;
+   background-color: #fff;
+   margin: auto auto;
+   text-align: center;
+   padding:1.5% 0;
+}
+.modify .modify_main_message span.name{
+	display: block;
+	margin-bottom: 5%;
+	font-size: 26px;
+}
+
+.modify .modify_main_message form input{
+   display: block;
+   width: 350px;
+   height: 50px;
+   margin:  0 auto;
+   padding-left: 20px;
+}
+
+.modify .modify_main_message  form input.pass{
+	margin: 20px auto 30px auto;
+}
+
+
+.modify .modify_main_message  form input[type=button]{
+    width: 350px;
+    margin-top: 10px
+}   
+
+
+/**************修改成功   start *************/
+
+.modify_succ{
+	background-image: url(../images/bg.png);
+	background-size: 100% 100%;
+}
+
+.modify_succ .modify_succ_bg{
+    padding: 22% 0;
+	background-color: rgba(0,0,0,0.6);
+} 
+
+.modify_succ .modify_succ_message{
+   width: 550px;
+   height:150px;
+   background-color: #fff;
+   margin: auto auto;
+   text-align: center;
+   padding-top:1.5%;
+}
+
+.modify_succ .modify_succ_message span{
+	display: block;
+	margin-top: 3%;
+}
+
+.modify_succ .modify_succ_message span img{
+	width:10%;
+}
+
+/**************修改成功   start *************/

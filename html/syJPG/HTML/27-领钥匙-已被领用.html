@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>领钥匙</title>
+
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="../css/css.css" type="text/css">
+
+    <script src="../js/zepto.min.js"></script>
+
+</head>
+
+<body class="bPER">
+<div class="centerSection bPER">
+    <section class="mgb10 bBS">
+        <ul class="averageUl">
+            <li>
+                <a><p>990</p><p>万</p></a>
+            </li>
+            <li>
+                <a><p>15</p><p>带看</p></a>
+            </li>
+            <li>
+                <a class="f00BB9B"><p><i class="iconfont">&#xe609;</i></p><p>物品清单</p></a>
+            </li>
+        </ul>
+    </section>
+    <section class="Msgex mgb10 pdX10">
+        <div class="Msgex-vertical"></div>
+        <ul class="MsgexUl">
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：经纪人带客户去看房子，客户反馈“超级喜欢”。</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="HMsg">
+                <div class="Msgex-label"></div>
+                <p>我：经纪人带客户去看房子，客户反馈“超级喜欢”。</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：经纪人带客户去看房子，客户反馈“超级喜欢”。</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="HMsg">
+                <div class="Msgex-label"></div>
+                <p>我：经纪人带客户去看房子，客户反馈“超级喜欢”。经纪人带客户去看房子，客户反馈“超级喜欢”。
+                    经纪人带客户去看房子，客户反馈“超级喜欢”。经纪人带客户去看房子，客户反馈“超级喜欢”。
+                    经纪人带客户去看房子，客户反馈“超级喜欢”。经纪人带客户去看房子，客户反馈“超级喜欢”。</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：经纪人带客户去看房子，客户反馈“超级喜欢”。</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：经纪人带客户去看房子，客户反馈“超级喜欢”。</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+            <li class="MMsg">
+                <div class="Msgex-label"></div>
+                <p>我：经纪人带客户去看房子，客户反馈“超级喜欢”。</p>
+                <p>2015-12-13  22:05</p>
+            </li>
+        </ul>
+    </section>
+    <div class="topRefresh mgb10"><i class="iconfont">&#xe60c;</i>上拉刷新</div>
+</div>
+<div class="maskLayer"></div>
+<div class="promptBox">
+    <div class="promptBoxTT center">提示</div>
+    <div class="pd10">
+        <div class="promptInput fB1B1B1 mgb10">
+            0002号钥匙已被张三领用
+        </div>
+        <div class="ListKeyBtn">
+            <a class="bg2E8CEC fFFF bd-227DDA">联系TA</a>
+            <a class="bgF1F1F1 mgl10 bd-DEDEDE">取&nbsp;&nbsp;&nbsp;&nbsp;消</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var msUll = $(".MsgexUl li").length;
+    var mslast = $(".MsgexUl li:nth-child(" + msUll + ")").height();
+    var msV = $(".Msgex-vertical").height();
+    $(".Msgex-vertical").height(msV - mslast + "px");
+</script>
+</body>
+</html>

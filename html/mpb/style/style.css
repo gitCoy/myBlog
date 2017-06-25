@@ -1,0 +1,617 @@
+@charset "utf-8";
+*{
+    margin: 0;padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+ul,ol,li{
+    list-style: none;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.index_header {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background-color:#fff;
+    height: 80px;
+    line-height: 80px;
+    box-shadow:3px 3px 5px #E9E9E9;
+    -ms-box-shadow: 3px 3px 5px #E9E9E9;
+}
+.header_cont {
+    width: 80%;
+    min-width: 1025px;
+    margin: auto;
+}
+.header_cont_left {
+    width: 60%;
+}
+.header_cont_right {
+    position: relative;
+    width: 178px;
+}
+.logo img {
+    width: 80px;
+}
+.menu {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.menu a {
+    display: inline-block;
+    height: 76px;
+    line-height: 76px;
+    margin-left: 50px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.menuSelected {
+    border-bottom: 2px solid #3785FC;
+}
+.headerSJ {
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    margin-left: 20px;
+    vertical-align: middle;
+    transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+}
+.loginName {
+    position: absolute;
+    display: none;
+    right: 0;
+    top:60px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px 1px #E9E9E9;
+}
+.loginName li {
+    background-color: #fff;
+    cursor: pointer;
+}
+.loginName li:hover {
+    background-color: #E6E6E6;
+}
+.header_cont_right:hover .loginName {
+    display: block;
+}
+.index_main {
+    width: 100%;
+	padding: 40px 0;
+}
+.mainCont {
+	width: 80%;
+	min-width: 1025px;
+	margin: 0 auto;
+}
+.tableSyle th,.tableSyle td{
+	height: 80px;
+	border-top: 1px solid #ccc;
+	text-align:center;
+}
+/**************员工管理   start *************/
+.staffTable tbody td:first-child {
+	border-top: none;
+}
+.staffTable tbody td:last-child {
+	width: 180px;
+}
+.tableSyle tbody td:first-child span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	background-color: #3785FC;
+	border-radius: 50%;
+	-ms-border-radius: 50%;
+}
+
+/**************财务管理   start *************/
+table{
+	width: 100%;
+	background-color: #fff;
+}
+.staffattrTable td {
+	width: 50%;
+	border-top: 1px solid #ddd;
+}
+.financeTable th {
+	border-top: none;
+}
+.cw_workType {
+	width: 100%;
+	margin:0 atuo;
+	margin-bottom: 40px;
+}
+.cw_hang {
+	background-color: #fff;
+	height: 80px;
+	line-height: 80px;
+	padding: 0 20px;
+}
+.cw_workType .cw_hang {
+	border-top: 1px solid #ddd;
+}
+.cw_workType div:first-child{
+	position:relative;
+	border-top: none;
+}
+.bold_font {
+	font-weight: bold;
+}
+.mgl20{margin-left: 20px;}
+.myList {
+	display: inline-block;
+	line-height: 30px;
+    width: 100px;
+    text-align: center;
+	padding: 2px 20px;
+	color: #fff;
+}
+.cw_je {
+	font-size: 25px;
+    font-family: "宋体";
+}
+.cw_box {
+	width: 100%;
+	height: 80px;
+	line-height:80px;
+}
+.cw_felx{
+	border-left:1px solid #ddd;
+	padding: 0 20px;
+    background-color: #fff;
+}
+.cw_box .cw_felx:first-child{border-left:none;}
+.cw_ts {
+	display: inline;
+	font-size: 10px;
+	color: #F16C6C;
+}
+.cw_ckmx {
+	font-size: 10px;
+	color: #3785fc;
+}
+#yg_main #yg_manger table.cw_table tbody td:last-child{
+	background-color: initial;
+	color: #333;
+	margin-top: 0;
+	line-height: 80px;
+	display: block;
+	width: inherit;
+}
+/***************我的账单UL  start*********************/
+.myBillUL {
+    width: 100%;
+    margin-top: 40px;
+}
+.myBillUL li {
+    height: 80px;
+    line-height: 80px;
+    margin-left: 40px;
+	padding-right: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.myBillUL li:first-child {
+    padding-left: 20px;
+}
+.myBillUL li:last-child {
+    border-bottom: none;
+}
+/***************提现  start*********************/
+.txCont {
+	margin-top: 20px;
+	padding: 40px 0;
+}
+.txContInput {
+	width: 300px;
+	margin: auto;
+}
+.incomeTT {
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	text-align: center;
+}
+.inputH {
+	margin-top: 20px;
+}
+.inputH input{
+	width: 260px;
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #ddd;	
+}
+.dzTime {
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	font-size: 0.9rem;
+}
+.inputSub  input {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #6dc402;
+	color: #fff;
+	border: none;
+}
+.gouImg {
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 3rem;
+	border-radius: 50%;
+	margin: 10px auto;
+}
+.confirm {
+	display: inline-block;
+	padding: 10px 40px;
+	cursor: pointer;
+}
+
+
+/***************员工详情  start*********************/
+
+.tablestyle{
+	text-align: center;
+}
+
+
+.index_main .tablestyle tr dl img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.index_main .tablestyle tr td:last-child  span{
+	display: inline-block;
+    line-height: 30px;
+    width: 100px;
+    text-align: center;
+    padding: 2px 20px;
+    color: #fff;
+    background-color: #3785FC;
+    font-size: 14px;
+}
+
+
+ .detail_yg_person p{
+	display: block;
+	width: 100%;
+	height: 80px;
+	background-color: #f6f6f4;
+	margin-top: 20px;
+	padding: 0 30%;
+	line-height: 80px;
+}
+ .detail_yg_person p span{
+	display: inline-block;
+	font-size: 16px;
+	position: relative;
+	cursor: pointer;
+}
+
+.detail_yg_person p span:last-child{
+	margin-left: 30%;
+}
+
+ .detail_yg_person p span a{
+	width:0; 
+    height:0; 
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid #3785fc;
+    position: absolute;
+    bottom: 0;
+    left:25%;
+}
+
+.detail_yg_person p span:nth-child(1){
+	color: #3785fc;
+}
+
+ .detail_yg_person tr, .detail_yg_person td{
+ 	height: 80px;
+ 	text-align: center;
+ }
+
+ .detail_yg_person table td:first-child span{
+ 	display: inline-block;
+ 	width: 30px;
+ 	height:30px;
+ 	border-radius: 50%;
+ 	background-color: #3785FC;
+ 	color: #fff;
+ 	line-height: 30px;
+ 	margin: 0 10px; 
+ }
+
+.detail_yg_person table td:nth-child(2) span{
+  	display: inline-block;
+  	width:60px;
+  	height:60px;
+  	background-color: #f2f2f2;
+  }
+
+ .detail_yg_person table td:nth-child(8) span{
+ 	display: inline-block;
+ 	margin-left: 20px;
+ }
+
+
+.detail_yg_person table td:last-child span{
+   	display: inline-block;
+   	width: 100px;
+   	height: 30px;
+   	background-color: #3785FC;
+   	color: #fff;
+   	line-height: 30px;
+   	text-align: center;
+   	padding: 2px 20px;
+   	font-size: 14px;
+}
+
+.detail_yg_person div table td:first-child span{
+    display: inline-block;
+  	width:60px;
+  	height:60px;
+  	background-color: #f2f2f2;
+  	border-radius:0;
+}
+
+
+/***************新增员工  start*********************/
+
+.xinzen_yg{
+    width: 550px;
+    height: 300px;
+    background-color: #fff;
+    margin: 10% auto;
+    text-align: center;
+    box-shadow: -5px  5px 5px #ddd;
+    padding-top:3%;
+}
+
+.xinzen_yg span{
+	font-size: 26px;
+
+}
+
+.xinzen_yg form input{
+	display: block;
+	width: 330px;
+	height: 50px;
+	margin: 20px auto;
+	padding-left: 20px;
+}
+
+.xinzen_yg form input[type=submit]{
+	width: 350px;
+	border: none;
+	background-color: #6dc402;
+	color: #fff;
+	font-size: 16px;
+	padding-left: 0;
+}
+/*******************商家中心 start *******************/
+.aside {
+	width: 25%;
+	background-color: #fff;
+	float: left;
+}
+.loginName a {
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	padding: 10px;
+}
+.aside ul li {
+	position: relative;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	cursor: pointer;
+}
+.asideActive:after{
+	position: absolute;
+	display: inline-block;
+	content: "";
+	right: 20px;
+	top: 34px;
+	width: 10px;
+	height: 10px;
+	border: none;
+	border-top: 2px solid #666;
+	border-right: 2px solid #666;
+	vertical-align: middle;
+	transform: rotateZ(45deg);
+	-ms-transform: rotateZ(45deg);
+}
+.mainSection {
+	width: 70%;
+	float: right;
+}
+.sjzxCont {
+	background-color: #fff;
+}
+.sjzxTT {
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ddd;
+}
+.sjzxTable tr td {
+	line-height: 70px;
+}
+.sjzxTable tr td:first-child {
+	width: 130px;
+	text-align: right;
+}
+.sjzxTable input {
+	height: 30px;
+	line-height: 30px;
+	width: 300px;
+	padding: 10px;
+	vertical-align: middle;
+	border: 1px solid #ddd;
+}
+.ygzxSure,input.ygzxSure {
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background-color: #42AE31;
+}
+input.ygzxSure {
+	line-height: 20px !important;
+	color: #fff !important;
+	border:none !important;
+}
+.xgzh {
+	color: #3785fc;
+	margin-left: 50px;
+}
+.yjfkTextare {
+	border: 1px solid #ddd;
+	width: 90%;
+	height: 150px;
+	padding: 10px;
+	resize: none;
+}
+.xteMesgeTable {
+	width: 100%;
+	padding-left: 20px;
+	line-height: 20px;
+}
+.xteMesgeTable tr td {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	text-align: justify;
+}
+.xteMesgeTable tr td:first-child {
+	width: 75px;
+	text-align: right;
+	vertical-align: top;
+}
+.xteMesgeTable tr:last-child td {
+	border-bottom: none;
+}
+.xteMesgeTable tr td .timeMss {
+	text-align: right;
+	padding: 10px 0;
+	color: #999;
+}
+.sjxx .editorBtn {
+	position: relative;
+	top:20px;
+	float: right;
+	line-height: 20px;
+	padding: 5px 20px;
+	background-color: #498FF1;
+	cursor: pointer;
+}
+.sjxx input,.sjxx textarea {
+	border: none;
+}
+.sjxx input:disabled,.sjxx textarea:disabled {
+	background-color: #fff;
+}
+.sjxx .ttTop {
+	line-height: 20px;
+	padding-top: 10px;
+	vertical-align: top;
+}
+.sjxx .addli {
+	display: none;
+}
+.sjxx textarea {
+	height: auto;
+	min-height: 40px;
+}
+.sjEditor .editorBtn {
+	display: none;
+}
+.sjEditor tr td .yjfkTextare {
+	height: 80px;
+}
+.sjEditor tr td input,.sjEditor tr td textarea {
+	color: #999;
+	border: 1px solid #ddd;
+}
+.sjEditor .sjxxAddr {
+	width: 80%;
+	padding-right: 30px;
+}
+.sjEditor .addli {
+	display: block;
+}
+.sjEditor .sjxxAddSp:after {
+	position: relative;
+	display: inline-block;
+	left: -31px;
+	content: "";
+	width: 15px;
+	height: 20px;
+	vertical-align: middle;
+	background: url("../images/add.png") no-repeat;
+	background-size: 100%;
+}
+.sjEditor .addImglabel {
+	display: inline-block;
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	color: #e1e1e1;
+	background-color: #eee;
+	text-align: center;
+}
+.formAddImg li {
+	position: relative;
+	width: 30%;
+	height: 100px;
+	float: left;
+	margin-right: 3%;
+	margin-bottom: 10px;
+}
+.deleteImg {
+	position: absolute;
+	display:none;
+	width: 100%;
+	height: 100%;
+	line-height: 100px;
+	background-color: #000;
+	opacity: 0.7;
+	top: 0;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+.sjEditor .formAddImg li:hover .deleteImg,.wsxx li:hover .deleteImg {
+	display: block;
+}
+.formAddImg li img {
+	width: 100%;
+	height: 100%;
+}
+.formAddImg li img.add {
+	width: 50px;
+	height: auto;
+	vertical-align: middle;
+}
+.formAddImg:after {
+	content: "";
+	clear: both;
+}

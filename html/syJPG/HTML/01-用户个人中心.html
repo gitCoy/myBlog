@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>个人中心</title>
+
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="../css/css.css" type="text/css">
+
+    <script src="../js/zepto.min.js"></script>
+</head>
+
+<body class="bPER">
+
+<div class="perHeader">
+    <div class="phWp">
+        <div class="ph-pic"><img src="../images/picImg.png" /></div>
+        <div class="ph-cont">
+            <div class="ph-name">
+                <p>杂七杂八</p>
+                <p><input class="iphone" type="text" value="18382427666" disabled="disabled"/> <a id="updtIphon" class="iconfont fFFF mgl10">&#xe62e;</a></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div class="centerSection bPER">
+    <section class="mgb10 bBS">
+        <ul class="averageUl">
+            <li>
+                <a href="05-出售出租-出售-关闭.html"><p>10</p><p>我的出售出租</p></a>
+            </li>
+            <li>
+                <a href="08-看房记录-买房记录-关闭.html"><p>15</p><p>我的看房记录</p></a>
+            </li>
+            <li>
+                <a href="28-看房记录-诚意金-退回.html"><p>22000</p><p>定金诚意金</p></a>
+            </li>
+        </ul>
+    </section>
+    <section class="csMyfavorite mgb10 bBS">
+        <div class="csMf-title">
+            <span class="f00BB9B mgl3">我的收藏</span>
+            <span class="csMf-em"><i class="iconfont">&#xe607;</i><span>找房源</span></span>
+        </div>
+        <ul class="averageUl">
+            <li>
+                <a><p>1</p><p>小区</p></a>
+            </li>
+            <li>
+                <a><p>2</p><p>二手房</p></a>
+            </li>
+            <li>
+                <a><p>3</p><p>租房</p></a>
+            </li>
+        </ul>
+        <ul class="averageUl">
+            <li>
+                <a><p>4</p><p>新房</p></a>
+            </li>
+            <li>
+                <a>
+                    <i class="csMf-gdslide"></i>
+                    <i class="csMf-gdcenter"></i>
+                    <i class="csMf-gdslide"></i>
+                </a>
+            </li>
+            <li>
+                <a></a>
+            </li>
+        </ul>
+    </section>
+    <section class="csMyfavorite mgb10 bBS">
+        <div class="csMf-title">
+            <span class="f00BB9B mgl3">帮助中心</span>
+            <span class="csMf-em"><i class="iconfont">&#xe604;</i><span>在线咨询</span></span>
+        </div>
+        <ul class="averageUl">
+            <li>
+                <a><p><i class="iconfont cs-Toolbox icon-font">&#xe615;</i></p><p>工具箱</p></a>
+            </li>
+            <li>
+                <a><p><i class="iconfont cs-server icon-font">&#xe613;</i></p><p>生活服务</p></a>
+            </li>
+            <li>
+                <a><p><i class="iconfont cs-aboutus icon-font">&#xe614;</i></p><p>关于盛屹地产</p></a>
+            </li>
+        </ul>
+    </section>
+</div>
+<div class="maskLayer"></div>
+<div class="promptBox phoneBox">
+    <div class="promptBoxTT pdl10">补充手机号</div>
+    <div class="pd10">
+        <div class="promptInput">
+            <input type="text" placeholder="请输入您的手机号"/>
+        </div>
+        <div class="ListKeyBtn">
+            <a class="bg2E8CEC fFFF bd-227DDA phoneClike">确&nbsp;&nbsp;&nbsp;&nbsp;定</a>
+            <a class="bgF1F1F1 mgl10 bd-DEDEDE phoneClike">取&nbsp;&nbsp;&nbsp;&nbsp;消</a>
+        </div>
+    </div>
+</div>
+<div class="promptBox SRBox none">
+    <div class="promptBoxTT center">房东您好</div>
+    <div class="pd10">
+        <div class="ListKeyBtn xqcl">
+            <a href="05-出售出租-出售-关闭.html" class="bg2E8CEC fFFF bd-227DDA">点击<br/>出售</a>
+            <a href="05-出售出租-出售-关闭.html" class="b00BB9B mgl10 fFFF bd-01A58A">点击<br/>出租</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $("#updtIphon").click(function(){
+        $(".iphone").removeAttr("disabled");
+        $(".iphone").addClass("upding");
+        $(".iphone").focus();
+        $(".iphone").val($(".iphone")[0].value);
+    });
+    $(".iphone").blur(function(){
+        $(".iphone").attr("disabled","disabled");
+        $(".iphone").removeClass("upding");
+    });
+
+
+    var msUll = $(".MsgexUl li").length;
+    var mslast = $(".MsgexUl li:nth-child(" + msUll + ")").height();
+    var msV = $(".Msgex-vertical").height();
+    $(".Msgex-vertical").height(msV - mslast + "px");
+//    $(".phoneClike").click(function(){
+//        $(".SRBox").css("display","block");
+//        $(".phoneBox").css("display","none");
+//    });
+    $(".maskLayer,.phoneClike").click(function(){
+        $(".maskLayer,.promptBox").css("display","none");
+    });
+</script>
+</body>
+</html>

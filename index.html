@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一晨Blog</title>
+    <link rel="shortcut icon" href="images/logo2.ico">
+    <meta name="keywords" content="陈仁义,一晨博客，web前端,书法网页,个人博客,陈仁义博客,网页制作，web前端开发">
+    <meta name="description" content="前端工程师陈仁义个人网站，个人博客，分享web技术和展示页面技术，可以接手各种前端项目保质保量完成前端等各项服务！">
+    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header class="header-wrap">
+        <div class="wrap-box clearfix wrap-hd">
+            <div class="logo-wrap">
+                <h1>
+                    <a href="#" title="一晨——每个早上的第一束阳光都是对生活的美好的祝福">
+                        <img src="images/logo.png" alt="一晨——每个早上的第一束阳光都是对生活的美好的祝福"/>
+                    </a>
+                </h1>
+            </div>
+            <nav class="top-nav-wrap">
+                <ul class="nav-list anim-link clearfix">
+                    <li><a href="#" target="_self">主页</a></li>
+                    <li><a href="html/myWeb.html">网站作品</a></li>
+                    <li><a href="html/aboutUs.html">介绍</a></li>
+                    <li><a href="html/contact.html">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrap-wq"></div>
+    </header>
+    <section class="lunbo" id="lunbo">
+        <ul>
+            <li>
+                <div class="lbShi">
+                    <div class="lbShiTxt wrap-box">
+                        <h1>声声慢<sub class="zz">李清照</sub></h1>
+                        <p>寻寻觅觅，冷冷清清，凄凄惨惨戚戚。乍暖还寒时候，最难将息。三杯两盏淡酒，怎敌他、晚来风急？雁过也，正伤心，却是旧时相识。
+                            满地黄花堆积。憔悴损，如今有谁堪摘？守着窗儿，独自怎生得黑？梧桐更兼细雨，到黄昏、点点滴滴。这次第，怎一个愁字了得！</p>
+
+                    </div>
+                </div>
+                <div class="bar"><p></p></div>
+            </li>
+            <li>
+                <div class="lbShi">
+                    <div class="lbShiTxt wrap-box">
+                        <h1>忆秦娥·箫声咽<sub class="zz">李白</sub></h1>
+                        <p>箫声咽，秦娥梦断秦楼月。秦楼月，年年柳色，灞陵伤别。</p>
+                        <p>乐游原上清秋节，咸阳古道音尘绝。音尘绝，西风残照，汉家陵阙。</p>
+                    </div>
+                </div>
+                <div class="bar"><p></p></div>
+            </li>
+            <li>
+                <div class="lbShi">
+                    <div class="lbShiTxt wrap-box">
+                        <h1>卜算子·咏梅<sub class="zz">陆游</sub></h1>
+                        <p>驿外断桥边，寂寞开无主。已是黄昏独自愁，更著风和雨。</p>
+                        <p>无意苦争春，一任群芳妒。零落成泥碾作尘，只有香如故。</p>
+                    </div>
+                </div>
+                <div class="bar"><p></p></div>
+            </li>
+        </ul>
+    </section>
+    <section class="wrap-box textCont">
+        <ul class="category-list clearfix">
+            <li>
+                <a href="html/myWeb.html#WEB" class="category-on">pc网站</a>
+                <i>笔</i>
+            </li>
+            <li>
+                <a href="html/myWeb.html#PC" class="category-on">手机网站</a>
+                <i>墨</i>
+            </li>
+            <li>
+                <a href="html/myWeb.html#WWRY" class="category-on">玩玩而已</a>
+                <i>纸</i>
+            </li>
+            <li>
+                <a href="#" class="category-on">其他</a>
+                <i>砚</i>
+            </li>
+        </ul>
+    </section>
+    <footer class="wrap-box textCont">
+        <div class="copyright-wrap">
+            <div class="link-title"><h1>YI CHEN</h1></div>
+            <div class="link-content clearfix">
+                <p class="fl">Copyright © JING Design. All Rights Reserved.</p>
+                <p class="fr">为了使您有更好的浏览体验，建议使用Chrome浏览器</p>
+            </div>
+        </div>
+	
+<!-- JiaThis Button BEGIN --><div id="ckepop">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_weixin">微信</a> 
+<a href="http://www.jiathis.com/share"  class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a> </div> 
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script>
+</div> <!-- JiaThis Button END -->
+
+    </footer>
+	
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        var i=0;
+        jummper();
+        function jummper(){
+            $(".lunbo ul li").eq(i).find(".lbShi").css("left","-1180px");
+            $(".lunbo ul li").eq(i).find(".bar p").css("width","0px");
+            $(".lunbo ul li").eq(i).find(".lbShi").animate({left:"0px"},500,function(){
+                //当图片移动完成后再加载进度条
+                //alert("当图片移动完成后再做操作");
+                $(".lunbo ul li").eq(i).find(".bar p").animate({width:"1174px"},8000,function(){
+                    $(".lunbo ul li").eq(i).find(".lbShi").animate({left:"1180px"},500,function(){
+                        i++;
+                        if(i>2)
+                            i=0;
+                        $(".lunbo ul li").eq(i).fadeIn(100).siblings().fadeOut(100);
+                    });
+                });
+            });
+        }
+        setInterval("jummper()",9100);
+    </script>
+    <script type="text/javascript">
+        var lunbo = document.getElementById("lunbo");
+        lunbo.style.height = window.innerHeight - 248 + "px";
+        $(".lunbo ul li").height(window.innerHeight - 248);
+        $(".lbShi").css("line-height",window.innerHeight - 248 + "px");
+
+        var w = 0;
+        $('.category-list li').hover(function(){
+            $(this).find('a').stop().animate({ left : 0});
+        }, function(){
+            w = $(this).width();
+            $(this).find('a').stop().animate({ left : '-' + w});
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册账户</title>
+<link rel="stylesheet" type="text/css" href="style/index.css">	
+<link rel="stylesheet" type="text/css" href="style/common.css">  
+</head>
+<body>
+<!-- <img src="images/bag.png"> -->
+<section class="reg_main">
+     <div class="reg_bg">
+		<div class="reg_message">
+		    <div><img src="images/logo.jpg"><span class="name">注册账号</span></div>
+			<form action="02-注册成功提示.html">
+				<input type="number" id="num" name="number" placeholder="请输入11位手机号">
+				<input type="number" id="yzm" name="yanzm" placeholder="验证码"><span><input type="text" id="btn" value="发送验证码" /></span>
+				<input type="password" id="paw" name="pasw" placeholder="密码">
+				<input type="submit" name="button" id="btn" value="下一步">
+			</form>
+		</div>
+	</div>	
+</section>
+<script type="text/javascript">
+var wait=60;  
+function time(o) {  
+        if (wait == 0) {  
+            o.removeAttribute("disabled");            
+            o.value="重新获取验证码";  
+            wait = 60;  
+        } else {  
+            o.setAttribute("disabled", true);  
+            o.value="重新发送(" + wait + ")";  
+            wait--;  
+            setTimeout(function() {  
+                time(o)  
+            },  
+            1000)  
+        }  
+    }  
+document.getElementById("btn").onclick=function(){time(this);}  
+
+</script>
+</body>
+</html>

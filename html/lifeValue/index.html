@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>看看你的生命期</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="head center">
+        <h1>算算看</h1>
+        <div>
+            <input type="number" id="num" placeholder="输入您的年龄" value=""><input type="button" class="buttom" onclick="js()" value="确定">
+        </div>
+        <p>
+            您活了：<strong id="nl">0</strong>个月；剩余<strong id="synl">0</strong>个月；
+        </p>
+    </header>
+    <section class="cont">
+        <ul class="cont_ul" id="cont_ul">
+
+        </ul>
+    </section>
+    <section class="pdlr10">
+        <h3>说明：</h3>
+        <p>这里我们用了人类的平均年龄75岁，然后乘以12总的月数！变红的为你已经走过的岁月，蓝色表示还剩的岁月！</p>
+    </section>
+<script type="text/javascript">
+    var pWidth = window.innerWidth;
+    var contUl = document.getElementById("cont_ul");
+    var i;
+    for(i=0;i<900;i++){
+        var contLi = contUl.appendChild(document.createElement("li"));
+        contLi.setAttribute("style","width:" + pWidth/30 + "px;height:" + pWidth/30 + "px");
+        contLi.setAttribute("class","cont_li");
+    }
+    function js(){
+        var j;
+        var num = Number(document.getElementById("num").value);
+        var nl = document.getElementById("nl");
+        var synl = document.getElementById("synl");
+        for(j=0;j<900;j++){
+            if(j< num*12){
+                document.getElementsByClassName("cont_li")[j].setAttribute("style","width:" + pWidth/30 + "px;height:" + pWidth/30 + "px;background-color: red;");
+            }
+        }
+        nl.innerHTML = num*12;
+        synl.innerHTML = 900-num*12;
+    }
+
+</script>
+</body>
+</html>

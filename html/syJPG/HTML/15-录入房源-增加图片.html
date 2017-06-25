@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>录入房源</title>
+
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="../css/css.css" type="text/css">
+
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/touch.js" defer></script>
+
+</head>
+
+<body class="bPER">
+<div class="centerSection bPER">
+    <section class="mgb10 bBS">
+        <ul class="averageUl">
+            <li><a class="cr-selected"><p><i class="iconfont">&#xe602;</i></p><p>基本资料</p></a></li>
+            <li><a><p><i class="iconfont">&#xe600;</i></p><p>家具家电</p></a></li>
+            <li><a><p><i class="iconfont">&#xe601;</i></p><p>其他</p></a></li>
+        </ul>
+    </section>
+    <section class="tb-bs mgb10 bBS">
+        <ul class="ListUl">
+            <li>
+                <a>
+                    <dl class="ListDL">
+                        <dt>装修</dt>
+                        <dd>精装修</dd>
+                    </dl>
+                    <span class="ListR"><i class="iconfont">&#xe603;</i></span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <dl class="ListDL">
+                        <dt>证件</dt>
+                        <dd>三证齐全</dd>
+                    </dl>
+                    <span class="ListR"><i class="iconfont">&#xe603;</i></span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <dl class="ListDL">
+                        <dt>户型图</dt>
+                        <dd>
+                            <form name="formPre" class="formAddImg">
+                                <input type="file" name="fileAddImg" id="filePre" class="filePre none" multiple="multiple">
+                                <label for="filePre" class="addImglabel"><i class="iconfont">&#xe617;</i></label>
+                            </form>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <dl class="ListDL">
+                        <dt>室内图</dt>
+                        <dd>
+                            <form name="formPre" class="formAddImg">
+                                <input type="file" name="fileAddImg" id="fileRoom" class="filePre none" multiple="multiple">
+                                <label for="fileRoom" class="addImglabel"><i class="iconfont">&#xe617;</i></label>
+                            </form>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <dl class="ListDL">
+                        <dt>外景图</dt>
+                        <dd>
+                            <form name="formPre" class="formAddImg">
+                                <input type="file" name="fileAddImg" id="fileside" class="filePre none" multiple="multiple">
+                                <label for="fileside" class="addImglabel"><i class="iconfont">&#xe617;</i></label>
+                            </form>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>
+
+<script type="text/javascript">
+    $(".filePre").change(function(){
+        var objUrl = getObjectURL(this.files[0]) ;
+        console.log("objUrl = "+objUrl) ;
+        if (objUrl) {
+            $(this).parent(".formAddImg").append("<img src='" + objUrl + "'>");
+        }
+    }) ;
+    //建立一個可存取到該file的url
+    function getObjectURL(file) {
+        var url = null ;
+        if (window.createObjectURL!=undefined) { // basic
+            url = window.createObjectURL(file) ;
+        } else if (window.URL!=undefined) { // mozilla(firefox)
+            url = window.URL.createObjectURL(file) ;
+        } else if (window.webkitURL!=undefined) { // webkit or chrome
+            url = window.webkitURL.createObjectURL(file) ;
+        }
+        return url ;
+    }
+</script>
+</body>
+</html>
